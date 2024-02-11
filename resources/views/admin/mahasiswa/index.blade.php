@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12 justify-content-between d-flex">
-                    <h1 class="m-0">{{ __('Mahasiswa') }}</h1>
+                    <h1 class="m-0">{{ __('Daftar Siswa') }}</h1>
                     <a href="{{ route('admin.mahasiswa.create') }}" class="btn btn-primary btn-sm"> <i class="fa fa-plus"></i> </a>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -29,10 +29,10 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama Lengkap</th>
-                                            <th>Nim</th>
+                                            <th>NISN</th>
                                             <th>Tempat, Tanggal Lahir</th>
                                             <th>Jenis Kelamin</th>
-                                            <th>Program Study</th>
+                                            <th>Kelas</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -46,13 +46,13 @@
                                             <td>{{ $mahasiswa->jenis_kelamin }}</td>
                                             <td>{{ $mahasiswa->program_study->nama_prody }}</td>
                                             <td>
-                                                <a href="{{ route('admin.mahasiswa.show', [$mahasiswa]) }}" class="btn btn-sm btn-warning text-white"> <i class="fa fa-eye"></i> </a>              
-                                                <a href="{{ route('admin.mahasiswa.edit', [$mahasiswa]) }}" class="btn btn-sm btn-info my-1"> <i class="fa fa-edit"></i> </a>              
+                                                <a href="{{ route('admin.mahasiswa.show', [$mahasiswa]) }}" class="btn btn-sm btn-warning text-white"> <i class="fa fa-eye"></i> </a>
+                                                <a href="{{ route('admin.mahasiswa.edit', [$mahasiswa]) }}" class="btn btn-sm btn-info my-1"> <i class="fa fa-edit"></i> </a>
                                                 <form onclick="return confirm('are you sure ?');" class="d-inline-block" action="{{ route('admin.mahasiswa.destroy', [$mahasiswa]) }}" method="post">
-                                                    @csrf 
+                                                    @csrf
                                                     @method('delete')
                                                     <button class="btn btn-sm btn-danger"> <i class="fa fa-trash"></i> </button>
-                                                </form>                              
+                                                </form>
                                             </td>
                                         </tr>
                                     @endforeach

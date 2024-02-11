@@ -47,19 +47,19 @@
                     <li class="nav-item">
                         <a href="{{ route('admin.program_study.index') }}" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Program Studi</p>
+                            <p>Kelas</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('admin.mata_kuliah.index') }}" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Mata Kuliah</p>
+                            <p>Mata Pelajaran</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('admin.mahasiswa.index') }}" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Mahasiswa</p>
+                            <p>Siswa</p>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -86,20 +86,39 @@
                             <p>KHS</p>
                         </a>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a href="{{ route('admin.transkrip_nilai.index') }}" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Cetak Transkrip</p>
                         </a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Dosen</p>
-                        </a>
                     </li>
                 </ul>
             </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-folder nav-icon"></i>
+                    <p>
+                        Teori & Tugas
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview" style="display: none;">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Modul</p>
+                        </a>
+                    </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Tugas</p>
+                    </a>
+                </li>
+                </ul>
+            </li>
+            
             <li class="nav-item">
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-cog nav-icon"></i>
@@ -113,71 +132,6 @@
                         <a href="#" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>User</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Menu</p>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-folder nav-icon"></i>
-                    <p>
-                        Info Kampus
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview" style="display: none;">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Identitas</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Kategori</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Informasi Kampus</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Tentang Kampus</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Fasilitas</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Materi Perkuliahan</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Gallery</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Kontak</p>
                         </a>
                     </li>
                 </ul>

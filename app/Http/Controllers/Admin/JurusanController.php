@@ -35,7 +35,7 @@ class JurusanController extends Controller
         Jurusan::create($request->validated());
 
         return redirect()->route('admin.jurusan.index')->with([
-            'message' => 'berhasi di buat !',
+            'message' => 'berhasil di buat !',
             'alert-type' => 'success'
         ]);
     }

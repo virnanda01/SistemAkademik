@@ -38,7 +38,7 @@ class ProgramStudyController extends Controller
         ProgramStudy::create($request->validated());
 
         return redirect()->route('admin.program_study.index')->with([
-            'message' => 'berhasi di buat !',
+            'message' => 'berhasil di buat !',
             'alert-type' => 'success'
         ]);
     }
@@ -74,7 +74,7 @@ class ProgramStudyController extends Controller
         $program_study->delete();
 
         return redirect()->back()->with([
-            'message' => 'berhasi di hapus !',
+            'message' => 'berhasil di hapus !',
             'alert-type' => 'danger'
         ]);
     }

@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12 d-flex justify-content-between">
-                    <h1 class="m-0">{{ __('Edit Program Study') }}</h1>
+                    <h1 class="m-0">{{ __('Edit Kelas') }}</h1>
                     <a href="{{ route('admin.program_study.index') }}" class="btn btn-primary"> <i class="fa fa-arrow-left"></i> </a>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -21,16 +21,16 @@
                 <div class="col-lg-12">
                     <div class="card p-3">
                         <form method="post" action="{{ route('admin.program_study.update', [$program_study]) }}">
-                            @csrf 
+                            @csrf
                             @method('put')
                             <div class="form-group row border-bottom pb-4">
-                                <label for="kode_prody" class="col-sm-2 col-form-label">Kode Prody</label>
+                                <label for="kode_prody" class="col-sm-2 col-form-label">Kode Kelas</label>
                                 <div class="col-sm-10">
                                 <input type="text" class="form-control" name="kode_prody" value="{{ old('kode_prody', $program_study->kode_prody) }}" id="kode_prody">
                                 </div>
                             </div>
                             <div class="form-group row border-bottom pb-4">
-                                <label for="nama_prody" class="col-sm-2 col-form-label">Nama Prody</label>
+                                <label for="nama_prody" class="col-sm-2 col-form-label">Nama Kelas</label>
                                 <div class="col-sm-10">
                                 <input type="text" class="form-control" name="nama_prody" value="{{ old('nama_prody', $program_study->nama_prody) }}" id="nama_prody">
                                 </div>
